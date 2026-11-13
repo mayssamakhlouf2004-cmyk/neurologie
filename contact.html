@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mayssa Makhlouf">
+    <meta name="description" content="Formulaire de contact et de demande d'informations sur le portail de neurochirurgie.">
+    <title>Contact - Neurochirurgie</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact & Demande d'Information</h1>
+        <p>Posez vos questions ou partagez vos suggestions sur le site</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="anatomie.html">Neuroanatomie</a>
+        <a href="pathologies.html">Pathologies</a>
+        <a href="techniques.html">Techniques & Audio</a>
+        <a href="multimedia.html">Vidéo & Liens</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Formulaire de contact</h2>
+        <p>Remplissez le formulaire ci-dessous pour nous adresser une question relative aux contenus présentés :</p>
+
+        <form action="#" method="post">
+            <label for="nom">Nom et Prénom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Ex : Ben Ali Ahmed" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+
+            <label for="statut">Vous êtes :</label>
+            <select id="statut" name="statut">
+                <option value="etudiant">Étudiant(e) en médecine</option>
+                <option value="professionnel">Professionnel(le) de santé</option>
+                <option value="patient">Patient / Grand public</option>
+            </select>
+
+            <label for="sujet">Rubrique concernée :</label>
+            <select id="sujet" name="sujet">
+                <option value="anatomie">Neuroanatomie</option>
+                <option value="pathologies">Pathologies crâniennes ou rachidiennes</option>
+                <option value="techniques">Techniques opératoires</option>
+                <option value="autre">Autre demande</option>
+            </select>
+
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Écrivez votre question ici..." required></textarea>
+
+            <button type="submit">Envoyer le formulaire</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projet Initiation à la Programmation Web | Mayssa Makhlouf</p>
+    </footer>
+
+</body>
+</html>
